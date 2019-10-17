@@ -10,6 +10,36 @@
     <link rel="stylesheet" href="css/u-reset.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <style>
+        /*
+        1. 创建一个文件夹
+        2. css文件夹  放入css文件
+           放入 swiper.css -> 已经帮我们写好了基础的样式
+           放入 animate.min.css  -> 帮我们写好了动画的方式
+           放入 u-reset.css  做响应式
+
+        3. js文件夹   放入js
+            1.  放入 swiper.js ->帮我们写好的基础的交互逻辑
+            2.  swiper.animate.min.js->写好的基础的动画逻辑
+        4. images 文件夹   放入图片
+            放入的是每一屏用到的图片，都是由设计师设计的，
+            切片的方式切出来
+        5. 创建html页面
+
+            1. 将css文件夹里面的内容全部都引入进来
+            2. 将js文件夹里面的内容全部都引入进来
+            3. 创建相应的html内容
+            4. 需要启动 swiper
+            5. 需要设置一下 每一屏的大小
+            6. 需要设置一下相应  html rem="750"
+            7. 需要设置动画
+                1. 要在动画的元素 class="ani"
+                2. swiper-animate-effect="rotateOut" 代表动画的方式?
+                3. 动画时间swiper-animate-duration="0.5s"
+                4. 动画等待时间swiper-animate-delay="0.3s"
+
+
+
+        */
         body{
             padding:0;margin:0;
         }
@@ -32,12 +62,15 @@
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide one">
-            <img src="images/zhuangshi.png" alt="" class="zhuangshi ani" swiper-animate-effect="rubberBand">
+            <img src="images/zhuangshi.png" alt="" class="zhuangshi ani" swiper-animate-effect="rubberBand" swiper-animate-duration="10s" swiper-animate-delay="5s">
         </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
         <div class="swiper-slide">Slide 4</div>
         <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
     </div>
 
 </div>
