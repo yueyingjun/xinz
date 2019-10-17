@@ -37,8 +37,6 @@
                 3. 动画时间swiper-animate-duration="0.5s"
                 4. 动画等待时间swiper-animate-delay="0.3s"
 
-
-
         */
         body{
             padding:0;margin:0;
@@ -55,6 +53,11 @@
             position: absolute;
             left:0.6rem;top:0.7rem;
         }
+        .fav{
+            width:1.53rem;height:1.5rem;
+            position: absolute;
+            right:0.6rem;top:0.7rem;
+        }
     </style>
 </head>
 <body>
@@ -62,7 +65,9 @@
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide one">
-            <img src="images/zhuangshi.png" alt="" class="zhuangshi ani" swiper-animate-effect="rubberBand" swiper-animate-duration="10s" swiper-animate-delay="5s">
+            <img src="images/zhuangshi.png" alt="" class="zhuangshi ani" swiper-animate-effect="rubberBand">
+
+            <img src="images/slide1/fav.png" alt="" class="fav ani" swiper-animate-effect="flash" >
         </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
